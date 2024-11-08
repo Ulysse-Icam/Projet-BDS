@@ -1,0 +1,274 @@
+/* Style de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #e6f0ff;  /* Bleu très doux pour le fond */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* En-tête */
+header {
+    background-color: #262794;  /* Bleu doux */
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+/* Formulaire de connexion */
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 2rem;
+    color: #262794;  /* Bleu de l'en-tête */
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+form input[type="email"],
+form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+}
+
+form input[type="email"]:focus,
+form input[type="password"]:focus {
+    outline: none;
+    border-color: #000096; /* Bleu foncé au focus */
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #f5b400; /* Jaune */
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+    background-color: #e59b00; /* Jaune plus foncé au survol */
+    transform: translateY(-3px);
+}
+
+/* Lien "Créer un compte" */
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #f5b400;  /* Jaune */
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #e59b00; /* Jaune plus foncé au survol */
+}
+
+
+
+
+
+
+
+
+.nav-links {
+    display: flex; /* Utilisation de flexbox pour l'alignement des liens */
+    gap: 30px; /* Espace entre les liens */
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;  /* Agrandir les boutons */
+    border-radius: 8px; /* Bords plus arrondis */
+    font-size: 1.2rem; /* Agrandir la taille du texte */
+    font-weight: bold;
+    background-color: #000096; /* Bleu foncé */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transition fluide pour le survol */
+}
+
+.nav-links a:hover {
+    background-color: #f5b400; /* Jaune au survol */
+    color: #000096; /* Texte bleu foncé */
+    transform: translateY(-3px); /* Effet d'élévation au survol */
+}
+
+.nav-links a:active {
+    background-color: #e59b00; /* Jaune plus foncé au clic */
+    transform: translateY(0); /* Retrait de l'élévation lors du clic */
+}
+
+
+
+/* Main content */
+main {
+    padding: 20px;
+}
+
+/* Section des événements */
+.event-section {
+    margin-top: 20px;
+}
+
+.event-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px; /* Augmenter l'écart entre les cartes d'événements */
+    justify-content: space-around;
+}
+
+.event-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.event-card h2 {
+    font-size: 1.5rem;
+    color: #4259eb;  /* Bleu doux */
+    margin-bottom: 10px;
+}
+
+.event-card p {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.event-card .discipline,
+.event-card .date,
+.event-card .description {
+    font-size: 1rem;
+}
+
+.event-card .buttons {
+    text-align: center;
+    margin-top: 20px; /* Augmenter l'espace entre les événements et les boutons */
+}
+
+.event-card .btn-yellow {
+    background-color: #f5b400;  /* Jaune */
+    border: none;
+    color: white;
+    padding: 15px 30px;  /* Agrandir les boutons */
+    text-align: center;
+    border-radius: 8px;  /* Arrondir un peu plus les bords */
+    cursor: pointer;
+    font-size: 1.2rem;  /* Augmenter la taille du texte */
+    margin-bottom: 1px; /* Augmenter l'espacement entre les boutons */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transition pour les boutons */
+}
+
+.event-card .btn-yellow:hover {
+    background-color: #e59b00;  /* Jaune plus foncé */
+    transform: translateY(-3px); /* Effet d'élévation au survol */
+}
+
+/* Formulaire d'inscription et gestion des événements */
+form {
+    margin-top: 10px;
+}
+
+form input[type="submit"] {
+    background-color: #f5b400;  /* Jaune */
+    border: none;
+    color: white;
+    padding: 15px 30px;  /* Agrandir les boutons */
+    text-align: center;
+    border-radius: 8px;  /* Arrondir un peu plus les bords */
+    cursor: pointer;
+    font-size: 1.2rem;  /* Agrandir la taille du texte */
+    margin-bottom: 20px; /* Espacement entre les boutons de formulaire */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transition pour les boutons de formulaire */
+}
+
+form input[type="submit"]:hover {
+    background-color: #e59b00;  /* Jaune plus foncé */
+    transform: translateY(-3px); /* Effet d'élévation au survol */
+}
+
+form input[type="hidden"] {
+    display: none;
+}
+
+/* Liste des participants */
+ul {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+ul li:last-child {
+    background-color: transparent;
+}
+
+/* Liens */
+a {
+    color: #f5b400;  /* Jaune */
+    text-decoration: none;  /* Suppression du soulignement par défaut */
+}
+
+a:hover {
+    color: #e59b00;  /* Jaune plus foncé pour le survol */
+    text-decoration: none;  /* Pas de soulignement au survol */
+}
+
+/* Modifié : survol des liens dans la navigation */
+
+
+/* Responsivité */
+@media (max-width: 768px) {
+    .event-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .event-card {
+        width: 100%;
+        max-width: 350px;
+        margin-bottom: 20px;
+    }
+}
